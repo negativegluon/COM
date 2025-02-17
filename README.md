@@ -109,6 +109,12 @@ augment_times = 4
 bash train_stage1.sh
 ```
 每个模型的单卡训练时间可能在3-6小时左右。  
+与此同时，打开models/MPSA， 训练MPSA模型。
+```
+cd models/MPSA
+python main.py
+```
+你可以在models/MPSA/output或output/中找到MPSA的权重文件，其应该为.bin文件，正常用torch.load加载即可。  
 在所有模型都训练完毕后，访问logs/，查看每个模型的权重文件，打开multieval.py并在multi_predict函数中参考原先地址，将model1至5所加载的文件地址分别更换为刚刚训练的模型的地址。  
 运行multieval.py，.csv文件会带有‘sub_UniRe+MetaFG+Vit+MPSA+Conv_’的前缀，在submission/文件夹中出现。
 
