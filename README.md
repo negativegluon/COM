@@ -36,10 +36,10 @@ conda activate ldb-com
 pip install -r requirements.txt
 ```
 ### 下载预训练权重（有可能仅推理也需要这些操作）
-UniRepLKNet: 从上文提及的UniRepLKNet公开仓库> ImageNet-22K Pretrained Weights下载UniRepLKNet-B  
-MetaFormer: 从上文提及的MetaFormer公开仓库> model zoo下载 MetaFormer-2， 224x224， 21k model   
-ConvNeXt：从上文提及的ConvNeXt公开仓库> ImageNet-22K trained models下载ConvNeXt-L，224x224，22k model  
-不要更改以上三个文件的文件名，将其移动至/models  
+UniRepLKNet: 从上文提及的UniRepLKNet公开仓库-> ImageNet-22K Pretrained Weights下载UniRepLKNet-B  
+MetaFormer: 从上文提及的MetaFormer公开仓库-> model zoo下载 MetaFormer-2， 224x224， 21k model   
+ConvNeXt：从上文提及的ConvNeXt公开仓库-> ImageNet-22K trained models下载ConvNeXt-L，224x224，22k model  
+不要更改以上三个文件的文件名，将其移动至models/  
 
 VisionTransformer：
 ```
@@ -49,7 +49,7 @@ git clone https://hf-mirror.com/google/vit-large-patch16-224
 MPSA：在models/MPSA中，按照MPSA公开仓库中Training部分操作  
 
 ### 下载数据集  
-从“慧炼丹心杯”比赛界面中下载比赛数据集，并放置在/dataset文件夹中。  
+从“慧炼丹心杯”比赛界面中下载比赛数据集，并放置在dataset/文件夹中。  
 文件结构应当形如：
 >dataset  
 >├── train_images  
@@ -58,9 +58,9 @@ MPSA：在models/MPSA中，按照MPSA公开仓库中Training部分操作
 >│   ├── Image_xxx.jpg  
 >├── train.csv  
 >└── test.csv  
-### 下载我们所训练的权重（如果你不需要推理我们的模型，可跳过） 
+### 下载在比赛数据集上训练的权重（如果你不需要单独推理模型，可跳过） 
 访问<https://epan.shanghaitech.edu.cn/l/IFD6ag> (提取码：edhy)  
-（我们设置了需要网盘登陆才能下载文件）  
+（需要网盘登陆才能下载文件）  
 将logs文件夹移动至项目主文件夹下。  
 如果你需要现在推理，打开multieval.py并在multi_predict函数中参考原先地址，将model1至5所加载的文件地址分别更换为你的本地地址。  
 
