@@ -85,7 +85,7 @@ random_seed = 114514
 cuda_device = '1,2,3,4,5,6,7'
 augment_times = 4
 ```
-打开除后缀是test以外所有以main开头的python文件，将schedule文件更换为
+打开除后缀是test以外所有以main开头的python文件，将self.scheduler更换为
 ```
  self.scheduler = OneCycleLR(
         self.optimizer,
