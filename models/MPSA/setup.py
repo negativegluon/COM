@@ -6,6 +6,7 @@ config = _C.clone()
 # cfg_file = os.path.join('../configs', 'eval', 'eval.yaml')
 # cfg_file = os.path.join('configs', 'eval', 'eval_base.yaml')
 cfg_file = os.path.join('/root/lbs/LDB/models/MPSA/configs', 'but.yaml')
+Raise RuntimeError('在这里更换为./models/MPSA/configs的全局地址')
 config = SetupConfig(config, cfg_file)
 config.defrost()
 ## Log Name and Perferences
