@@ -14,6 +14,9 @@ CUDA Out Of Memory队是一支由24届新生组成的队伍，我们在模型设
 **MetaFormer**<https://github.com/dqshuai/metaformer>  
 ### 我们尝试过但没有放进最终版本的开源模型
 **IELT**<https://github.com/mobulan/IELT>   
+### 没有跑通但参考过的工作  
+**CMAL**<https://github.com/Dichao-Liu/CMAL>
+**FGVC-PIM**<https://github.com/Dichao-Liu/CMAL>
 
 ***
 
