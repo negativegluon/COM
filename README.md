@@ -1,10 +1,4 @@
-# 上科大 ‘慧炼丹心杯’ CUDA Out of Memory队代码备份
-
-## 写在前面  
-CUDA Out Of Memory队是一支由24届新生组成的队伍，我们在模型设计、代码管理上可能有诸多的不成熟之处。  
-~~没有随时保存超参数 忘记检查其中一次训练的随机种子 项目中满屏的本地路径~~  
-请大家在跑本文件遇到问题时多多包涵，我们会及时检修  
-~~屎山守护精灵尝试发力~~  
+# 上科大 ‘慧炼丹心杯’ CUDA Out of Memory队代码备份  
 
 ### 我们借用的开源模型（包括他们提供的ImageNet上预训练权重）
 **VisionTransformer**<https://github.com/google-research/vision_transformer>  
@@ -12,11 +6,6 @@ CUDA Out Of Memory队是一支由24届新生组成的队伍，我们在模型设
 **ConvNeXt**<https://github.com/facebookresearch/ConvNeXt>  
 **MPSA**<https://github.com/mobulan/MPSA>  
 **MetaFormer**<https://github.com/dqshuai/metaformer>  
-### 我们尝试过但没有放进最终版本的开源模型
-**IELT**<https://github.com/mobulan/IELT>   
-### 没有跑通但参考过的工作  
-**CMAL**<https://github.com/Dichao-Liu/CMAL>  
-**FGVC-PIM**<https://github.com/Dichao-Liu/CMAL>
 
 ***
 
