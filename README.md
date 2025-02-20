@@ -1,5 +1,13 @@
 # 上科大 ‘慧炼丹心杯’ CUDA Out of Memory队代码备份  
 
+## 写在前面  
+我们在排行榜上最后版本里不同模型不是同时训练，而是在一个较长的时间跨度上慢慢调试训练的。本repo提供的训练超参数仅仅为在UniRepLKNet这一个单独模型上公榜分数最高的超参数。  
+在训练其他模型的时候，我可能略微改动了一些超参数（主要集中在数据增强部分）。  
+另外，我直接使用了MPSA官方提供的代码进行了MPSA模型的训练，可能忘记设计随机数种子。  
+如果复现结果较差（当然建立在没有跌得特别惨的基础上），请理解。  
+
+我直接将本地项目copy了上来，保留了较多的全局路径，对复现造成的不便在此致歉。
+
 ### 我们借用的开源模型（包括他们提供的ImageNet上预训练权重）
 **VisionTransformer**<https://github.com/google-research/vision_transformer>  
 **UniRepLKNet**<https://github.com/AILab-CVC/UniRepLKNet>  
