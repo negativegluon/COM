@@ -2,7 +2,8 @@ import argparse
 import os
 import torch
 
-dataset_path = '/root/lbs/LDB/dataset'  #蝴蝶数据集
+dataset_path = './dataset'  #蝴蝶数据集
+raise RuntimeError('请修改这里的路径！')
 train_csv = os.path.join(dataset_path, 'train.csv') 
 test_csv = os.path.join(dataset_path, 'test.csv')
 train_images = os.path.join(dataset_path, 'train_images')
