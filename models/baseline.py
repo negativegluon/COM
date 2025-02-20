@@ -10,8 +10,8 @@ class ButterflyCNN(nn.Module):
         os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
         #self.model = models.vit_b_16(pretrained=True)
         
-        model_name = "/root/cyh/google/vit-large-patch16-224"
-
+        model_name = "./google/vit-large-patch16-224"
+        raise RuntimeError('请在这里指向下载的vit预训练权重')
         self.model = AutoModelForImageClassification.from_pretrained(model_name)
         self.fc = nn.Linear(1000, num_classes)
         self.name = 'baseline'
